@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from .models import JournalEntry
-from .forms import JournalEntryForm, MoodForm, ResourceForm
-from django.views.generic import TemplateView
+from .forms import JournalEntryForm, MoodForm, ResourceForm, SignUpForm
+from django.views.generic import TemplateView, View
 
 # Create your views here.
 
@@ -12,6 +12,25 @@ class IndexView(TemplateView):
     def get(self, request):
         return render(request, self.template_name)
 
+class SignUpView(View):
+    template_name = 'accounts/signup.html'
+
+    def get(self, request):
+        form = SignUpForm()
+        return render(request, self.template_name, {'form': form})
+    
+    def post(self, request):
+        if request.method == 'POST':
+            form = SignUpForm(request.POST)
+            if form.is_valid():
+                instance = form.save(commit=False)
+                instance.user = request.user
+                instance.save()
+                messages.success(request, f"Your account '{instance.user.username}' has been created")
+                return redirect('index.html')
+        else:
+            form = SignUpForm()
+        return render(request, self.template_name, {'form': form})
 
 @login_required
 def add_journal_entry(request):

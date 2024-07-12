@@ -1,10 +1,11 @@
 from django.urls import path
-from .views import IndexView, journal_entries, add_journal_entry, edit_journal_entry, delete_journal_entry
+from .views import IndexView, SignUpView, journal_entries, add_journal_entry, edit_journal_entry, delete_journal_entry
 
 app_name = 'blog'
 
 urlpatterns = [
     path('', IndexView.as_view(), name='index'),
+    path('signup/', SignUpView.as_view(), name='signup'),
     # path('journal_entries/', journal_entries, name='journal_entries'),
     path('new/', add_journal_entry, name='add_journal_entry'),
     path('edit_journal_entry/<int:pk>/', edit_journal_entry, name='edit_journal_entry'),
