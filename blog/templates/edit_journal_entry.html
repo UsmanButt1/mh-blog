@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Edit Journal Entry{% endblock %}
+
+{% block navbar %}
+    {{ parent.navbar }}
+{% endblock %}
+
+{% block content %}
+    <h1>Edit Your Journal Entry</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Update</button>
+    </form>
+{% endblock %}
