@@ -16,11 +16,10 @@
       {% endfor %}
     </ul>
   {% endif %}
-  {% for entry in entries %}
+  {% for entry in journalentry_list %}
     <article>
       <h2>{{ entry.title }}</h2>
       <p>{{ entry.entry_text | truncatechars:100 }}</p>
-      <!-- <a href="{% url 'edit_journal_entry' entry.pk %}">Edit</a> -->
     </article>
   {% empty %}
         <p>You have no journal entries yet.</p>

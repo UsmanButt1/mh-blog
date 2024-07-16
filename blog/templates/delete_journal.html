@@ -10,6 +10,6 @@
     {% csrf_token %}
     <input type="hidden" name="entry_id" value="{{ entry.id }}">
     <button type="submit">Yes, delete</button>
-    <a href="{% url 'journal_entries' %}">Cancel</a>
+    <a href="{% url 'journalentries' %}">Cancel</a>
   </form>
 {% endblock %}

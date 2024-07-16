@@ -16,8 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from blog.views import IndexView, JournalEntryView, AddJournalEntry, EditJournalEntry, DeleteJournalEntry
 
 urlpatterns = [
+    path('', IndexView.as_view(), name='index'),
+    path("accounts/", include("allauth.urls")),
+    path('journalentries/', JournalEntryView.as_view(), name='journalentries'),
     path('admin/', admin.site.urls),
     path("", include('blog.urls'), name="blog-urls"),
 ]

@@ -1,13 +1,11 @@
+from . import views
+from blog.views import IndexView, JournalEntryView, AddJournalEntry, EditJournalEntry, DeleteJournalEntry
 from django.urls import path
-from .views import IndexView, SignUpView, journal_entries, add_journal_entry, edit_journal_entry, delete_journal_entry
-
-app_name = 'blog'
 
 urlpatterns = [
-    path('', IndexView.as_view(), name='index'),
-    path('signup/', SignUpView.as_view(), name='signup'),
-    # path('journal_entries/', journal_entries, name='journal_entries'),
-    path('new/', add_journal_entry, name='add_journal_entry'),
-    path('edit_journal_entry/<int:pk>/', edit_journal_entry, name='edit_journal_entry'),
-    path('delete/<int:pk>/', delete_journal_entry, name='delete_journal_entry'),
+    path('journalentries/', views.JournalEntryView.as_view(), name='journalentries'),
+    path('new/', AddJournalEntry, name='addjournalentry'),
+    path('editjournalentry/<int:pk>/', EditJournalEntry, name='editjournalentry'), # noqa
+    path('delete/<int:pk>/', DeleteJournalEntry, name='deletejournalentry'), # noqa
 ]
+
