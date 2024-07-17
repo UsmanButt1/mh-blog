@@ -2,180 +2,17 @@
 {% load static %}
 {% block content %}
 
-<!doctype html>
-<html lang="en">
-
-<!-- <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Mentality Blog - Your Community Mental Health Blog">
-    <meta name="author" content="Mohammad Usman Butt">
-    <title>Mentality Blog</title>
-
-    <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/blog/">
-
-    Bootstrap core CSS
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style> -->
-
-
-    <!-- Custom fonts for this template
-    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
-     Custom styles for this template
-    <style>
-        /* stylelint-disable selector-list-comma-newline-after */
-
-        .blog-header {
-            line-height: 1;
-            border-bottom: 1px solid #e5e5e5;
-        }
-
-        .blog-header-logo {
-            font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-            font-size: 2.25rem;
-        }
-
-        .blog-header-logo:hover {
-            text-decoration: none;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-        }
-
-        .display-4 {
-            font-size: 2.5rem;
-        }
-
-        @media (min-width: 768px) {
-            .display-4 {
-                font-size: 3rem;
-            }
-        }
-
-        .nav-scroller {
-            position: relative;
-            z-index: 2;
-            height: 2.75rem;
-            overflow-y: hidden;
-        }
-
-        .nav-scroller .nav {
-            display: flex;
-            flex-wrap: nowrap;
-            padding-bottom: 1rem;
-            margin-top: -1px;
-            overflow-x: auto;
-            text-align: center;
-            white-space: nowrap;
-            -webkit-overflow-scrolling: touch;
-        }
-
-        .nav-scroller .nav-link {
-            padding-top: .75rem;
-            padding-bottom: .75rem;
-            font-size: .875rem;
-        }
-
-        .card-img-right {
-            height: 100%;
-            border-radius: 0 3px 3px 0;
-        }
-
-        .flex-auto {
-            flex: 0 0 auto;
-        }
-
-        .h-250 {
-            height: 250px;
-        }
-
-        @media (min-width: 768px) {
-            .h-md-250 {
-                height: 250px;
-            }
-        }
-
-        /* Pagination */
-        .blog-pagination {
-            margin-bottom: 4rem;
-        }
-
-        .blog-pagination>.btn {
-            border-radius: 2rem;
-        }
-
-        /*
-        * Blog posts
-        */
-        .blog-post {
-            margin-bottom: 4rem;
-        }
-
-        .blog-post-title {
-            margin-bottom: .25rem;
-            font-size: 2.5rem;
-        }
-
-        .blog-post-meta {
-            margin-bottom: 1.25rem;
-            color: #727272;
-        }
-
-        /*
-        * Footer
-        */
-        .blog-footer {
-            padding: 2.5rem 0;
-            color: #727272;
-            text-align: center;
-            background-color: #f9f9f9;
-            border-top: .05rem solid #e5e5e5;
-        }
-
-        .blog-footer p:last-child {
-            margin-bottom: 0;
-        }
-    </style>
-</head> -->
-
 <body>
 
     <div class="container">
-        <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
-            <div class="col-md-6 px-0">
-                <h1 class="display-4 font-italic">Empower Your Mind: Mental Wellness Together</h1>
-                <p class="lead my-3">Share journal entries, track moods, and connect with a supportive
-                    community to identify triggers and enhance mental well-being.</p>
-                <p class="lead mb-0"><a href="{% url 'account_signup' %}" class="text-white font-weight-bold">Join Our Community</a></p>
+        <div id="hero" style="height: 400px" class="p-4 p-md-5 mb-4 text-black rounded">
+            <div style="margin-left: 0px" class="col-md-6 px-0">
+                <br>
+                <br>
+                <h2 class="display-4 font-italic">Empower Your Mind: Mental Wellness Together</h2>
+                <p style="color: green" class="lead my-3">Share journal entries and connect with a supportive <br>
+                    community to enhance mental well-being.</p>
+                <p class="lead mb-0"><a href="{% url 'account_signup' %}" class="text-black font-weight-bold">Join Our Community</a></p>
             </div>
         </div>
 
@@ -197,8 +34,7 @@
                             aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img"
                             focusable="false">
                             <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                dy=".3em">Thumbnail</text>
+                            <image href="/static/assets/images/flowerbrain-resized2.jpg" width="200" height="250" preserveAspectRatio="xMidYMid slice"/>
                         </svg>
 
                     </div>
@@ -220,8 +56,7 @@
                             aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img"
                             focusable="false">
                             <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                dy=".3em">Thumbnail</text>
+                            <image href="/static/assets/images/teddy-resized.jpg" width="200" height="250" preserveAspectRatio="xMidYMid slice"/>
                         </svg>
 
                     </div>
@@ -234,94 +69,86 @@
         <div class="row">
             <div class="col-md-8">
                 <h3 class="pb-4 mb-4 font-italic border-bottom">
-                    From the Firehose
+                    From the Team at Mentality Blog
                 </h3>
 
                 <div class="blog-post">
-                    <h2 class="blog-post-title">Sample blog post</h2>
-                    <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+                    <h2 class="blog-post-title">Welcome to Mentality Blog: Your Safe Space for Mental Wellbeing</h2>
+                    <p class="blog-post-meta">July 17, 2024 by Mentality Blog</p>
 
-                    <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap.
-                        Basic typography, images, and code are all supported.</p>
+                    <p>In today's fast-paced world, it's easy to feel overwhelmed and isolated. Many of us grapple with 
+                        stress, anxiety, and the pressures of daily life, often feeling like we're alone in our 
+                        struggles. But what if there was a place where you could share your thoughts and experiences, 
+                        connect with others who understand what you're going through, and find support on your journey 
+                        to better mental health?</p>
+                    <p>Welcome to Mentality Blog, a nurturing community dedicated to enhancing mental 
+                        wellbeing. Here, you'll find a safe space to log your thoughts as journal entries and explore 
+                        the experiences of like-minded individuals. Our blog is more than just a platform; it's a 
+                        community where everyone is in the same boat, striving to improve their mental health together.</p>
                     <hr>
-                    <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus
-                        mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere
-                        consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-                    <blockquote>
-                        <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong>
-                            ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    </blockquote>
-                    <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet
-                        fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-                    <h2>Heading</h2>
-                    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non
-                        commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus,
-                        porta ac consectetur ac, vestibulum at eros.</p>
-                    <h3>Sub-heading</h3>
-                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                    <pre><code>Example code block</code></pre>
-                    <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.
-                        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-                    <h3>Sub-heading</h3>
-                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean
-                        lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce
-                        dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
-                        amet risus.</p>
-                    <ul>
-                        <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-                        <li>Donec id elit non mi porta gravida at eget metus.</li>
-                        <li>Nulla vitae elit libero, a pharetra augue.</li>
-                    </ul>
-                    <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-                    </p>
-                    <ol>
-                        <li>Vestibulum id ligula porta felis euismod semper.</li>
-                        <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-                        <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-                    </ol>
-                    <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
-                </div><!-- /.blog-post -->
+                    <h2>Why Join The Mentality Blog?</h2>
+                    <p><strong>1. Share Your Stories:</strong></p>
+                    <p>Writing can be a powerful tool for self-reflection and healing. At the Mentality Blog, you can 
+                        create journal entries to express your thoughts, feelings, and experiences. Whether you're dealing 
+                        with a challenging day or celebrating a small victory, your story matters. Sharing your journey can 
+                        provide relief and insight, not just for you, but for others who might be facing similar challenges.</p>
+                    
+                    <p><strong>2. Connect with a Supportive Community:</strong></p>
+                    <p>One of the most comforting aspects of our platform is knowing you're not alone. By reading others' journal 
+                        entries, you'll discover a diverse range of experiences and perspectives. You'll find that many people 
+                        share the same struggles and triumphs as you do. This sense of connection can be incredibly reassuring 
+                        and can foster a strong sense of belonging.</p>
+                    
+                    <p><strong>3. Learn and Grow Together:</strong></p>
+                    <p>The Mentality Blog is a space for continuous learning and growth. Our community members share not only 
+                        their challenges but also their coping strategies, tips, and resources. By engaging with the community, you'll 
+                        gain new insights and techniques to help manage your mental health more effectively.</p>
 
+                    <h3>How to Get Started</h3>
+                    <p>Joining the Mentality Blog is simple and free. Here's how you can get started:</p>
+                    <!-- <pre><code>Example code block</code></pre> -->
+                    <p><strong>1. Sign Up:</strong></p>
+                    <p>Create your free account and become a member of our supportive community.</p>
+                    
+                    <p><strong>2. Start Journaling:</strong></p>
+                    <p>Log your thoughts and experiences in your personal journal. Write as often as you like;
+                        there's no pressure, just a safe space to express yourself.</p>
+                    
+                    <p><strong>3. Engage with Others:</strong></p>
+                    <p>Read others' journal entries. Offer/receive support via resources, share your thoughts, and build 
+                        meaningful connections.</p>
+                    
+                    <p><strong>4. Participate in Community Events:</strong></p>
+                    <p>Join our regular events and discussions focused on mental health topics. Learn from experts 
+                        and community members alike.</p>
+                    
+                    <p>At the Mentality Blog, we believe that by sharing our journeys, we can support each other 
+                        and grow stronger together. Your story is important, and your voice matters. Join us today 
+                        and become part of a community that cares.</p>
+                    <p>Together, we can navigate the ups and downs of life, find comfort in shared experiences, and work
+                        towards a brighter, healthier future.</p>
+                    <p>Start your journey with us today and discover the power of a supportive community. Your path to
+                        better mental wellbeing is just a click away!</p>
+                    <p><strong>Join the Mentality Blog - Because Together, We're Stronger.</strong></p>
+                </div>
                 <div class="blog-post">
-                    <h2 class="blog-post-title">Another blog post</h2>
-                    <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
+                    <h2 class="blog-post-title">Exciting Upcoming Features on Mentality Blog</h2>
+                    <p class="blog-post-meta">July 19, 2024 by Mentality Blog</a></p>
 
-                    <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus
-                        mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere
-                        consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-                    <blockquote>
-                        <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong>
-                            ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    </blockquote>
-                    <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet
-                        fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-                    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non
-                        commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus,
-                        porta ac consectetur ac, vestibulum at eros.</p>
-                </div><!-- /.blog-post -->
-
-                <div class="blog-post">
-                    <h2 class="blog-post-title">New feature</h2>
-                    <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
-
-                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean
-                        lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce
-                        dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
-                        amet risus.</p>
+                    <p>Stay tuned for new features that will further enhance your experience on Mentality Blog:</p>
                     <ul>
-                        <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-                        <li>Donec id elit non mi porta gravida at eget metus.</li>
-                        <li>Nulla vitae elit libero, a pharetra augue.</li>
+                        <li><strong>Comment on Journal Entries:</strong> Engage with the community by commenting on others' journal entries.</li>
+                        <li><strong>Mood Tracking:</strong> Track your moods over specific periods and view them on a graph.</li>
+                        <li><strong>Share Mood Insights:</strong> Share mood graphs with others to identify triggers of low moods.</li>
+                        <li><strong>Jump to Key Entries:</strong> Easily navigate to periods of low, neutral, and happy moods to see what was happening
+                        in your life at those times.</li>
                     </ul>
-                    <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet
-                        fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-                    <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-                    </p>
-                </div><!-- /.blog-post -->
+                    <p>These features are designed to help you better understand your mental health journey and connect more deeply with our supportive 
+                        community. We are excited to bring these tools to you soon!</p>
+                </div>
 
                 <nav class="blog-pagination">
-                    <a class="btn btn-outline-primary" href="#">Older</a>
-                    <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+                    <a class="btn btn-outline-primary" href="#">Top</a>
                 </nav>
 
             </div>
@@ -347,33 +174,19 @@
                 <div class="p-4">
                     <h4 class="font-italic">More Help</h4>
                     <ol class="list-unstyled">
-                        <li><a href="#">Mental Health Articles</a></li>
-                        <li><a href="#">Meditation Videos</a></li>
-                        <li><a href="#">Local Emergency Contacts</a></li>
+                        <li><a href="https://www.mentalhealth.org.uk/explore-mental-health/articles" target="_blank">Mental Health Articles</a></li>
+                        <li><a href="https://www.pexels.com/search/videos/meditation/" target="_blank">Meditation Videos</a></li>
+                        <li><a href="https://www.nhs.uk/nhs-services/mental-health-services/where-to-get-urgent-help-for-mental-health/" target="_blank">Emergency Contacts</a></li>
                     </ol>
                 </div>
             </aside>
 
         </div><!-- /.row -->
-<<<<<<< HEAD
-    </main>
-=======
 
     </main><!-- /.container -->
-
-    <!-- <footer class="blog-footer">
-        <p>Blog built for <a href="https://wwww.heroku.com">the Mental-health Wellness Community</a> by <a
-                href="https://www.linkedin.com/mohammad-usman-butt">Mohammad Usman Butt</a>.</p>
-        <p>
-            <a href="#">Back to top</a>
-        </p>
-    </footer> -->
-
-
 
 </body>
 
 </html>
 
->>>>>>> parent of 22e24bb (Fixed Bug with Adding Journal Entry and added functionality to view clickable url resources in entries)
 {% endblock %}
