@@ -19,7 +19,13 @@
   {% for entry in journalentry_list %}
     <article>
       <h2>{{ entry.title }}</h2>
-      <p>{{ entry.entry_text | truncatechars:100 }}</p>
+      <p>{{ entry.entry_text }}</p>
+      <p>{{ entry.mood }}</p>
+      <p>{{ entry.resource }}</p>
+      <p>{{ entry.resourcetitle }}</p>
+      {% if entry.resourceurl != None %}
+      <a href="{{ entry.resourceurl }}"><p>{{ entry.resourceurl }}</p></a>
+      {% endif %}
       {% if user.is_authenticated and entry.user == user %}
         <a href="{% url 'editjournalentry' journalentry_id=entry.id %}" class="btn btn-edit btn-success">Edit</a>
         <a href="{% url 'deletejournalentry' journalentry_id=entry.id %}" class="btn btn-danger">Delete</a>
