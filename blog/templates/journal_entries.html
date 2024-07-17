@@ -20,6 +20,7 @@
   
   {% for entry in journalentry_list %}
     <article>
+<<<<<<< HEAD
       <h2>Title: {{ entry.title }}</h2>
       <p>Entry Text: {{ entry.entry_text }}</p>
       {% if entry.mood == 1 %}
@@ -34,6 +35,10 @@
       {% if entry.resourceurl != None %}
       <a href="{{ entry.resourceurl }}"><p>Resource URL: {{ entry.resourceurl }}</p></a>
       {% endif %}
+=======
+      <h2>{{ entry.title }}</h2>
+      <p>{{ entry.entry_text | truncatechars:100 }}</p>
+>>>>>>> parent of 22e24bb (Fixed Bug with Adding Journal Entry and added functionality to view clickable url resources in entries)
       {% if user.is_authenticated and entry.user == user %}
         <a href="{% url 'editjournalentry' journalentry_id=entry.id %}" class="btn btn-edit btn-success">Edit</a>
         <a href="{% url 'deletejournalentry' journalentry_id=entry.id %}" class="btn btn-danger">Delete</a>
