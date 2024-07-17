@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Delete Journal Entry{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Confirm Deletion</h2>
+    <p>Are you sure you want to delete the journal entry "{{ journalentry.title }}"?</p>
+    <form method="post" action="{% url 'deletejournalentry' journalentry.id %}">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Yes, delete</button>
+        <a href="{% url 'journalentries' %}" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+{% endblock %}

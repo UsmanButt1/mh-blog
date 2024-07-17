@@ -42,10 +42,14 @@
                             href="{% url 'index' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == organiser_url %}active{% endif %}" aria-current="page"
+                        <a class="nav-link {% if request.path == journalentries_url %}active{% endif %}" aria-current="page"
                             href="{% url 'journalentries' %}">Journal Entries</a>
                     </li>
                     {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == addjournalentry_url %}active{% endif %}" aria-current="page"
+                            href="{% url 'addjournalentry' %}">Add an Entry</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
                             href="{% url 'account_logout' %}">Logout</a>
@@ -62,7 +66,7 @@
                     {% endif %}
                 </ul>
                 <span class="navbar-text text-muted">
-                    Mentality Blog
+                    Together in Thought, Stronger in Mind
                 </span>
             </div>
         </div>
@@ -74,11 +78,12 @@
     </main>
     <!-- Footer -->
     <footer class="footer mt-auto py-3 dark-bg">
-        <p class="m-0 text-center text-black">Made by Mohammad Usman Butt</p>
-        <p class="m-0 text-center text-black">Follow us on: <i class="fab fa-facebook-square ms-3"></i>
-            <i class="fab fa-twitter-square ms-3"></i>
-            <i class="fab fa-instagram-square ms-3"></i>
-            <i class="fab fa-youtube-square ms-3"></i>
+        <p class="m-0 text-center text-black">Made by Mentality Blog</p>
+        <p class="m-0 text-center text-black">Follow us on:
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square ms-3"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square ms-3"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square ms-3"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube-square ms-3"></i></a>
         </p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"

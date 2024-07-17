@@ -1,7 +1,8 @@
 from django.views import generic, View
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib import messages
+from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from .models import JournalEntry
 from .forms import JournalEntryForm
@@ -42,41 +43,43 @@ def AddJournalEntry(request):
 Edit Journal Entry View
 '''
 @login_required
-def EditJournalEntry(request, pk):
-    entry = get_object_or_404(JournalEntry.objects.get(pk=pk))
-    
-    if request.user != entry.User:
-        messages.error
-        (request, "You do not have permission to edit this entry")
-        return redirect('edit_journal.html', {'form': form})
-    
+def EditJournalEntry(request, journalentry_id):
+    journalentry = get_object_or_404(JournalEntry, id=journalentry_id)
+
     if request.method == 'POST':
-        form = JournalEntryForm(request.POST, instance=entry)
-        if form.is_valid():
-            form.save()
-            messages.success(request, f"Your journal entry '{entry.title}' has been updated.")
-            return redirect('journalentries')
+        journalentryform = JournalEntryForm(data=request.POST, instance=journalentry)
+
+        if journalentryform.is_valid() and journalentry.user == request.user:
+            journalentry = journalentryform.save(commit=False)
+            journalentry.save()
+            messages.add_message(request, messages.SUCCESS, 'Journal Entry Updated!')
+            return HttpResponseRedirect(reverse('journalentries'))
+        else:
+            messages.add_message(request, messages.ERROR, 'Error Updating Journal Entry!')
     else:
-        form = JournalEntryForm(instance=entry)
-    return render(request, 'edit_journal.html', {'form': form})
+        journalentryform = JournalEntryForm(instance=journalentry)
+
+    context = {'form': journalentryform, 'journalentry': journalentry}
+    return render(request, 'edit_journal_entry.html', context)
 
 '''
 Delete Journal Entry
 '''
 @login_required
-def DeleteJournalEntry(request, pk):
-    entry = get_object_or_404(JournalEntry, pk=pk, user=request.user)
-
-    if request.user != entry.User:
-        messages.error
-        (request, "You do not have permission to edit this entry")
-        return redirect('edit_journal_entry.html', {'form': form})
+def DeleteJournalEntry(request, journalentry_id):
+    journalentry = get_object_or_404(JournalEntry, id=journalentry_id)
 
     if request.method == 'POST':
-        entry.delete()
-        messages.success(request, f"Your journal entry '{entry.title}' has been deleted.")
+        if journalentry.user == request.user:
+            journalentry.delete() 
+            messages.add_message(request, messages.SUCCESS, 'Journal entry deleted!')
+        else:
+            messages.add_message(request, messages.ERROR, 'You can only delete your own journal entries!')
         return redirect('journalentries')
-
+    
+    context = {'journalentry': journalentry}
+    return render(request, 'confirm_delete_journal_entry.html', context)
+    
 '''
 View Journal Entries
 '''

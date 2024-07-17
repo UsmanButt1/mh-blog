@@ -7,25 +7,12 @@ MOOD_TYPES = ((1, "happy"), (2, "neutral"), (3, "sad"))
 
 # Create your models here.
 
-# class Mood(models.Model):
-#     """
-#     Mood model
-#     """
-#     mood = models.IntegerField(choices=MOOD_TYPES, default=2)
-#     # user = models.ForeignKey(User, on_delete=models.CASCADE)
-
 class Resource(models.Model):
     """
     Resource model
     """
-    # RESOURCE_TYPES = [
-    #     ('A', 'Article'),
-    #     ('V', 'Video'),
-    #     ('P', 'Podcast'),
-    # ]
     title = models.CharField(max_length=100, null=True)
     resource_type = models.CharField(max_length=200)
-    # user = models.ForeignKey(User, on_delete=models.CASCADE)
     
     def __str__(self):
         return f"{self.title}"
