@@ -17,7 +17,7 @@ section {
     overflow: auto;
 }
 
-.signupbox li {
+.signupbox li, .messages li {
     list-style-type: none;
 }
 

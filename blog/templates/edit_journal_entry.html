@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}Edit/Delete Journal Entry{% endblock %}
+{% block title %}Edit Journal Entry{% endblock %}
 
 {% block navbar %}
 {{ parent.navbar }}
@@ -9,7 +9,7 @@
 
 {% block content %}
 <section>
-    <h1>Edit/Delete Journal Entry</h1>
+    <h1>Edit Journal Entry</h1>
     {% if messages %}
     <ul class="messages">
         {% for message in messages %}

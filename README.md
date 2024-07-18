@@ -1,84 +1,92 @@
 # Mentality Blog:
 
 
-<!-- ![Beige Brown Aesthetic Save The Date Editable Mockup Instagram Post (1)](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/43d06fb1-1dd1-4b75-8644-c8479f971614) -->
+![Mentality Blog Website](static/assets/images/responsiveness.JPG)
 
 
-Mentality Blog is blog to post and comment on topics related to mental health. The application was created to allow users to post, comment and share their mental health feelings and have a safe space with like-minded individuals to share their experiences and create comments to start conversations for support.
+Mentality Blog is a platform designed for logging journal entries related to mental health. It provides users with a safe space to share their feelings, experiences, and resources with like-minded individuals, fostering a supportive community for collective benefit.
 
-This blog is a personal but open space for those struggling with their mental health to find solace in the support of like-minded individuals who are on the same journey to recovery. The idea is that a user can post their thoughts and add a mood for a particular day for other to comment and show their support.
+This blog offers a personal yet open space for those struggling with their mental health to find solace and support from others on a similar journey. Users can post their thoughts, track their mood for specific days, and share valuable resources such as articles, podcasts, videos, and books for the benefit of the entire community.
 
 The live application can be viewed here : 
 
-<!-- https://thebookbooth1-559d9131718c.herokuapp.com/ -->
+(https://mentalhealth-blog-59e7f6f2fb53.herokuapp.com/)
 
 
 # Purpose and Target Audience:
- **Problem Statement:** Many individuals find it difficult to manage their mental health and track their emotional well-being, leading to increased stress and anxiety. Also, having limited or no support structure can exacerbate the mental health challenges.
+ **Problem Statement:** Many individuals struggle to manage their mental health and track their emotional well-being, often resulting in increased stress and anxiety. The absence of a support structure can further intensify these mental health challenges.
 
-**Purpose:** This mental health journal app aims to provide a simple and intuitive solution for individuals to log/share their thoughts and feelings, track their mental health, and identify patterns to improve emotional well-being as well as connect with like-minded individuals who are on the same journey.
+**Purpose:** This mental health journal app offers a simple and intuitive way for individuals to log and share their thoughts and feelings, track their mental health, and identify patterns to improve emotional well-being. It also fosters connections with like-minded individuals who are on the same journey.
 
-**Target Audience:** The primary target audience include individuals looking to improve their mental health which can include students, professionals, and anyone interested in mindfulness, self-care and those looking for a stronger support structure.
+**Target Audience:** The primary target audience includes individuals seeking to improve their mental health, such as students, professionals, and anyone interested in mindfulness and self-care, as well as those looking for a stronger support structure.
 
 
 # User Stories, Wireframes and Agile Methodology:
 
 ## User Stories:
-* As a site user I can view a list of posts so that I can select which post I want to read.
-* As a site user I can register an account so that I can comment on a post.
-* As a site user I can leave comments on a post so that I can be involved in the conversation.
-* As a site user/admin I can view comments on individual posts so that I can read the conversation.
-* As a site user I can modify or delete my comment on a post so that I can be involved in the conversation.
+* As a site user I can view a list of journal entries so that I can select which journal entry I want to read.
+    Acceptance Criteria:
+    * Given more than one journal entry entry in the database
+    * When a user opens the main page a list of journal entries is seen
+    * The user sees all journal entry headings and information to choose what to read
+* As a site user I can register an account so that I can add journal entries.
+    Acceptance Criteria:
+    * Given a username, email and password a user can register an account
+    * The user can log in
+    * When the user is logged in the can add journal entries
+* As a site user/admin I can view individual journal entries so that I can read the conversation.
+    Acceptance Criteria:
+    * Given one or more user journal entries the admin can view them
+    * The site user can click on the journal entries to read the conversation
+* As a site user I can modify or delete my journal entry so that I can amend my journal entry.
+    Acceptance Criteria:
+    * A logged in user can update their journal entry
+    * A logged in user can delete their journal entry
 * As a site admin I can create, read, update and delete posts so that I can manage the blog content.
-* As a site admin I can approve or disapprove comments so that I can filter out inappropriate/unsuitable comments
+    Acceptance Criteria:
+    * A logged in user can create a journal entry
+    * A logged in user can read a journal entry
+    * A logged in user can update a journal entry
+    * A logged in user can delete a journal entry
 
 
 ## Wireframe & Initial Design:
 ### Home Page
 
-<!-- ![1](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/a17458a2-fd0b-45cb-af44-387ed524fef6) -->
+![Mobile and Desktop Wireframe - Homepage](static/assets/images/wireframe-mobiledesktop-homepage.jpg)
 
-### (Logged in) View Posts
+### (Logged in) View Journal Entries
 
-<!-- ![1](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/a4c56a06-3692-467d-813a-ba3797d3087c) -->
+![Mobile and Desktop Wireframe - View Journal Entries](static/assets/images/wireframe-mobiledesktop-journalentriespage.jpg)
 
-### Create a Post
+### Create a Journal Entry
 
-<!-- ![Add a book wireframe](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/c0379553-0906-4d77-aca6-beb8fc6834d9) -->
+![Mobile and Desktop Wireframe - Add a Journal Entry](static/assets/images/wireframe-mobiledesktop-addjournalpage.jpg)
 
-### Comments in Posts
+### Edit a Journal Entry
 
-<!-- ![Book Details Wireframe](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/467fa65e-eb66-4b21-94af-f9090b6a54ab) -->
-
-### Mood Tracking
-
-<!-- ![Book Details Wireframe](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/467fa65e-eb66-4b21-94af-f9090b6a54ab) -->
+![Mobile and Desktop Wireframe - Edit/Delete Journal Entry](static/assets/images/wireframe-mobiledesktop-editdeletejournalpage.jpg)
 
 
 ## Agile:
-This project was created using Agile principles via a kanban board on Github. This is the first time I have implemented Agile as an individual developer. However, creating user stories and identifying accepterance criteria acted as a roadmap to target the various features and functionalities of the application. It enabled me to stay on track and reduced distractions.
+This project was developed using Agile principles, utilizing a Kanban board on GitHub. As my first experience implementing Agile as an individual developer, creating user stories and identifying acceptance criteria provided a clear roadmap for targeting the application's features and functionalities. This approach kept me focused and minimized distractions.
 
-<!-- ![project board](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/98b7d24d-7234-4155-af15-df72403659f9) -->
+![Project Kanban Board](static/assets/images/kanbanboard.JPG)
 
 
 # Design Choices:
 
 ## Colour scheme:
 
-#fafafa - Header
-
-Dark Green - Buttons
-
-#54b672 - Footer
+![Project Colour Scheme](static/assets/images/colourscheme.png)
 
 The colours were selected with the intention of complementing the hero image and the idea was to ensure the overall experience was calming.
 
 ## Typography:
 The following fonts were chosen for a clean, modern and calming look that is both easily readable and simplistic.
 
-Roboto
-
-Lato
+* Headings - Playfair Display
+* Paragraphs - Arial, sans-serif
 
 
 ## Priority Features:
@@ -86,50 +94,45 @@ Lato
 ### Home Page:
 
 #### Navbar & Hero Image:
-<!-- ![home](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/4f033ade-4485-40c2-ac2d-5fc5641b5cb7) -->
+![Home Page - Navbar & Hero Image](static/assets/images/navbar-heroimage.JPG)
 
-The landing page provides an introduction to the website with a call to action button encouraging new users to sign up. Signing up and logging in allows them access to view journal entries and to create a journal entry for other users to interact with via comments.
-The navigation bar is valuable for users as it provides quick and easy access to important sections of the website. The navigation bar includes links to Home, Journal Entries, Create Journal Entry, Register/Logout and Sign In. Displaying a hero image using graphics are both aesthetically pleasing and easy for users to identify the purpose of the website and understand what it is all about and how they can be a part of the community.
+The landing page introduces the website and features a call-to-action button encouraging new users to sign up. Once signed up and logged in, users can view journal entries and create their own for others to interact with via comments.
+
+The navigation bar is user-friendly, offering quick access to key sections of the website. It includes links to Home, Journal Entries, Create Journal Entry, Register/Logout, and Sign In. A hero image with graphics enhances the page's aesthetic appeal, clearly conveying the website's purpose and inviting users to join the community.
 
 
 #### Registration:
 
-Registration allows users to view journal entries and the relevant resources within the community. It allows them to create a journal entry as well as edit and delete their entries to ensure the community journal entries are updated regularly.
+Registration enables users to access journal entries and relevant resources within the community. It allows them to create, edit, and delete their own journal entries, ensuring the community content remains current and engaging.
 
-<!-- ![signup](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/0b6b2b83-d426-4e63-805b-09a6dcdde550) -->
+#### Sign-Up:
 
-
-
-#### Sign In:
-
-<!-- ![sign-in](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/6a1d9a16-2211-4403-88a1-3ec1b506cef4) -->
+![Sign-Up Page](static/assets/images/signuppage.JPG)
 
 
-#### Books:
+#### Sign-In:
 
-<!-- ![books](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/54c96d8e-6bc3-403f-a8ad-1c4188b60a6e) -->
-
-
-#### Add a Book:
-
-<!-- ![add a book](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/8e15c1d9-193f-4032-b147-0969c3b45bab) -->
+![Sign-In Page](static/assets/images/signinpage.JPG)
 
 
-The form allows users to easily create a journal entry to the website which will then be visible on the journal entries page for the users to browse. Users are also able to edit and delete an entry that they have added giving them full control over their own contributions.
+#### Journal Entries:
+
+![Journal Entries](static/assets/images/journalentriespage.JPG)
 
 
-#### Book Details:
+#### Add a Journal Entry:
 
-<!-- ![book detail](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/e88f0274-670b-4a76-8ef8-7c44a5f440a7) -->
+![Add a Journal Entry](static/assets/images/addjournalentrypage.JPG)
 
-Users are able to find more information about journal entries they are interested in. The journal entry details include the title, author, content, mood and resource type albeit an article, video or podcast that they can add. This provides users with sufficient information about the journal entry, context as well as moods to relate to and resources to benefit from and share with other users.
+
+The form allows users to effortlessly create journal entries that will be displayed on the journal entries page for others to browse. Users also have the ability to edit and delete their own entries, giving them complete control over their contributions.
+
 
 #### Footer:
 
-<!-- ![footer](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/fde543e6-0ee2-4c17-b8a8-436d4e824f4d) -->
+![Footer](static/assets/images/footer.JPG)
 
-Links in the footer redirect to respective social media pages. 
-It allows users to stay connected with the Mentality Blog on social media platforms, keeping them informed about any changes that may occur over time.
+The footer links redirect users to our social media pages, providing a way to stay connected with Mentality Blog on various platforms and receive updates about any changes over time.
 
 
 # Future Features:
@@ -145,44 +148,51 @@ It allows users to stay connected with the Mentality Blog on social media platfo
 
 Database Design:
 
-<!-- ![ERD](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/6db92c85-0b4c-485c-b60d-709df3fb963e) -->
+![ERD](static/assets/images/mh-erd.png)
 
 
-Entity Relationship Diagrams (ERD) help the developer to make connections between databases and information. Creating an ERD helped me understand how the tables relate to one another. I used dbdiagram.io to create the diagram and the arrows represent how the data fields relate to one another.
+Entity Relationship Diagrams (ERD) assist developers in establishing connections between databases and information. Crafting an ERD enhanced my comprehension of the relationships between tables. Utilizing dbdiagram.io facilitated the creation of the diagram, with arrows symbolizing the data field relationships.
 
 
 ## Data Models:
 
 
-<!-- | Book   |            |   |
+| User   |            |   |
+|----------|:-------------:|------:|
+| User_id |  IntegerField | FK |
+| Username |  CharField   |   |
+| Email | CharField |     |
+| Password |  CharField |  |
+| Created_at |  CharField   |   |
+| Role | CharField |     |
+
+
+
+
+| JournalEntry   |            |   |
 |----------|:-------------:|------:|
 | Title |  CharField |  |
-| Author |  CharField   |   FK |
-| ISBN | CharField |     |
-| User |  CharField | FK |
-| Genre |  CharField   |   FK |
-| Language | CharField |  FK   |
-| Summary |  TextField |  |
+| Slug |  SlugField |  |
+| User |  ForeignKey | FK |
+| Published_on |  DateTimeField |  |
+| Entry_text |  TextField |  |
+| Mood |  IntegerField |  |
+| Resource |  ForeignKey | FK |
+| Resourcetitle |  CharField |  |
+| Resourceurl |  URLField |  |
 
 
-
-| Genre   |            |   |
+| Resource   |            |   |
 |----------|:-------------:|------:|
-| Category |  CharField | FK |
+| Title |  CharField |   |
+| Resource_type |  CharField | PK |
 
 
-| Language   |            |   |
-|----------|:-------------:|------:|
-| Language |  CharField | FK  |
-
-| Author  |            |   |
-|----------|:-------------:|------:|
-| Name |  CharField | FK  | -->
 
 ## User Flow Chart:
-<!-- ![The Book Booth Flowchart](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/7727f007-8e2e-45fc-b955-57e2d50d1e98) -->
+![Mentality Blog Flowchart](static/assets/images/website-flowchart.png)
 
-The Flowchart served as an efficient way to make important decisions when creating the app. It helped me narrow down which decisions were important for the users and admin as well as establishing the appropriate authentication. It also helped me decide which features were the most important i.e adding a book and viewing a list of books that are available to borrow at The Book Booth Library.
+The flowchart was instrumental in guiding crucial decisions throughout the app's development process. It enabled me to pinpoint key considerations for users and administrators alike, while also establishing robust authentication protocols. Furthermore, it assisted in prioritizing vital features such as adding, editing, and deleting journal entries.
 
 # Validation
 ## HTML
@@ -380,21 +390,29 @@ I used the steps used when deploying our django blog to deploy this application.
 
 # Bugs
 
-All the bugs that occured during the creation of this application have been resolved. There is a section of the application which allows you to reset your password that needs to be implemented, however they were not within the scope of this particular project and will be addressed in the near future along with the other future features.
+* Slug Field not operational yet due to the Comments model not being created as yet. This would be a future feature to implement and the slug field would be used to link the journal entry to the comment and also allow for editing and deleting comments. Currently, this does not affect the user CRUD functionality.
+
+* Horizontal scroll tab appears on the Journal Entries page when pagination occurs past 6 journal entries. This does not affect the user experience however it is something that would be resolved in the future.
+
+Most bugs that occured during the creation of this application have been resolved. There is a section of the application which allows you to reset your password that needs to be implemented, however they were not within the scope of this particular project and will be addressed in the near future along with the following future features:
+
+* 
+
+
 
 
 # Credit: 
 
-* Although I used the django blog resources provided on the LMS, I also received alot of additional clarification by following along with django projects on YouTube. One of the vidoes I found especially helpful was : https://youtu.be/ZCPhzoK_bg4?si=juRZRzgGcZz6cf5r
+* Although I used the django blog resources provided on the LMS, I also received alot of additional clarification by reaching to fellow students in the cohort and drawing inspiration from the walkthrough project on the LMS.
 
-* Stack Overflow and Phind was used to solve any smaller bugs and further clarification on errors I was receiving in the terminal.
+* Tutor Support, Google, Stack Overflow, Phind and ChatGPT was used to solve any smaller bugs and further clarification on errors I was receiving in the terminal.
 
-* A special thanks to all the other indivudals in our cohort for their continuous support throughout the course.
+* Thank you to all the other individuals in our cohort for their continuous support throughout the course.
 
 * Font Awesome was used for icons and the fonts used were derived from Google Fonts.
 
-* Wireframes were created with Balsamiq.
+* Wireframes were created with Balsamiq and Canva.
 
 * Flowcharts were created using LucidChart.
 
-* Logos and slogans were created with Logo.com.
+* The text and descriptions were generated by ChatGPT.

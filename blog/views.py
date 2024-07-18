@@ -1,6 +1,7 @@
 from django.views import generic, View
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.utils.text import slugify
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
@@ -27,6 +28,7 @@ def AddJournalEntry(request):
     if request.method == 'POST':
         form = JournalEntryForm(request.POST)
         if form.is_valid():
+            JournalEntry.slug = slugify(JournalEntry.title)
             if request.user.is_authenticated:
                 instance = form.save(commit=False)
                 instance.user = request.user
@@ -87,6 +89,9 @@ class JournalEntryView(LoginRequiredMixin, generic.ListView):
     model = JournalEntry
     template_name = "journal_entries.html"
     paginate_by = 6
+
+    def get_queryset(self):
+        return JournalEntry.objects.all().order_by('-published_on')
 
     def get_context_date(self, **kwargs):
         context = super().get_context_data(**kwargs)
