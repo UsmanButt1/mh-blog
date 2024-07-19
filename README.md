@@ -210,22 +210,23 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| admin.py | [PEP8 CI] | ![screenshot]![admin py](static/assets/images/validate-python-adminpyfile.JPG)
- | Pass: No Errors |
-| apps.py | [PEP8 CI] | ![screenshot]![apps py](static/assets/images/validate-python-appspyfile.JPG)
- | Pass: No Errors |
-| forms.py | [PEP8 CI] | ![screenshot]![forms py](static/assets/images/validate-python-formspyfile.JPG)
- | Pass: No Errors |
-| models.py | [PEP8 CI] | ![screenshot]![models py](static/assets/images/validate-python-modelspyfile.JPG)
- | Pass: No Errors |
-| Blog urls.py | [PEP8 CI] | ![screenshot]![urls py](static/assets/images/validate-python-urlspyfile.JPG)
- | Pass: No Errors |
-|  views.py | [PEP8 CI] | ![screenshot]![views py](static/assets/images/validate-python-viewspyfile.JPG)
- | Pass: No Errors |
- |  settings.py | [PEP8 CI] | ![screenshot]![settings py](static/assets/images/validate-python-settingspyfile.JPG)
- | Pass: No Errors |
- | MentalHealth urls.py | [PEP8 CI] | ![screenshot]![urls py](static/assets/images/validate-python-projecturlspyfile.JPG)
- | Pass: No Errors |
+| admin.py | [PEP8 CI] | ![screenshot]![admin py](static/assets/images/validate-python-adminpyfile.JPG)| Pass: No Errors |
+| apps.py | [PEP8 CI] | ![screenshot]![apps py](static/assets/images/validate-python-appspyfile.JPG)| Pass: No Errors |
+| forms.py | [PEP8 CI] | ![screenshot]![forms py](static/assets/images/validate-python-formspyfile.JPG)| Pass: No Errors |
+| models.py | [PEP8 CI] | ![screenshot]![models py](static/assets/images/validate-python-modelspyfile.JPG)| Pass: No Errors |
+| Blog urls.py | [PEP8 CI] | ![screenshot]![urls py](static/assets/images/validate-python-urlspyfile.JPG)| Pass: No Errors |
+|  views.py | [PEP8 CI] | ![screenshot]![views py](static/assets/images/validate-python-viewspyfile.JPG)| Pass: No Errors |
+ |  settings.py | [PEP8 CI] | ![screenshot]![settings py](static/assets/images/validate-python-settingspyfile.JPG)| Pass: No Errors |
+ | MentalHealth urls.py | [PEP8 CI] | ![screenshot]![urls py](static/assets/images/validate-python-projecturlspyfile.JPG)| Pass: No Errors |
+
+
+## JavaScript:
+
+I have used the recommended [JSHint JavaScript Validator](https://jshint.com/) to validate my JavaScript files.
+
+| File | CI URL | Screenshot | Notes |
+| --- | --- | --- | --- |
+| delete.js | [JSHint] | ![screenshot]![delete.js](static/assets/images/testing-javascript-deleteentryfunction.JPG) | Pass: No Errors |
 
 # Responsiveness:
 Development tools were used to test responsiveness on varying sized devices including laptop, mobile and tablet size.
