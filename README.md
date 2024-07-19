@@ -1,4 +1,4 @@
-# Mentality Blog:
+# Mentality Blog
 
 
 ![Mentality Blog Website](static/assets/images/responsiveness.JPG)
@@ -50,7 +50,7 @@ The live application can be viewed here :
         * A logged in user and admin can delete a journal entry
 
 
-## Wireframe & Initial Design:
+## Wireframe, Agile & Initial Design:
 ### Home Page
 
 ![Mobile and Desktop Wireframe - Homepage](static/assets/images/wireframe-mobiledesktop-homepage.jpg)
@@ -76,7 +76,7 @@ This project was developed using Agile principles, utilizing a Kanban board on G
 
 # Design Choices:
 
-## Colour scheme:
+## Colour Scheme:
 
 ![Project Colour Scheme](static/assets/images/colourscheme.png)
 
@@ -135,16 +135,7 @@ The form allows users to effortlessly create journal entries that will be displa
 The footer links redirect users to our social media pages, providing a way to stay connected with Mentality Blog on various platforms and receive updates about any changes over time.
 
 
-# Future Features:
-
-<!-- * Implement a review system so readers can share their thoughts about books that they have completed. This will give others a better idea of whether the book is a good fit for them. 
-* Display if a book is available with a status (Available, Not Available).
-* Allow users to reserve a book beforehand.
-* A search engine where users can search for books by title, author and genre.
-* Provide locations of nearest libraries.
-* Provide a way for the users to engage and form a secure community.
-* Include an about page to inform others of how The Book Booth Library works and how to use it. -->
-
+# Database Schema and Design:
 
 Database Design:
 
@@ -194,8 +185,8 @@ Entity Relationship Diagrams (ERD) assist developers in establishing connections
 
 The flowchart was instrumental in guiding crucial decisions throughout the app's development process. It enabled me to pinpoint key considerations for users and administrators alike, while also establishing robust authentication protocols. Furthermore, it assisted in prioritizing vital features such as adding, editing, and deleting journal entries.
 
-# Validation
-## HTML
+# Validation:
+## HTML:
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
@@ -205,7 +196,7 @@ The flowchart was instrumental in guiding crucial decisions throughout the app's
 | Sign In| [W3C] | ![Validate Sign-In Page](static/assets/images/validate-html-signinpage.JPG) | Pass: No Errors |
 | Register| [W3C] | ![Validate Sign-Up Page](static/assets/images/validate-html-signuppage.JPG) | Fail: Errors with end tags, unclosed element and stray end tags all originate from within AllAuth |
 
- ## CSS
+ ## CSS:
 
  I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate my CSS file.
  
@@ -213,7 +204,7 @@ The flowchart was instrumental in guiding crucial decisions throughout the app's
 | --- | --- | --- | --- |
 | style.css | [Jigsaw] | ![Validate CSS](static/assets/images/validate-css.JPG) | Pass: No Errors |
 
-## Python
+## Python:
 
 I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
 
@@ -357,7 +348,7 @@ Add an Entry
 ![Add an Entry Audit](static/assets/images/testing-lighthouse-screenshotaddanentrymobile.JPG)
 
 
-## Links
+## Links:
 
 | Link | Expected Outcome | Grade |
 | ------- | ---------------- | ----- |
@@ -373,8 +364,7 @@ Add an Entry
 | Sign-In | Navigates to a screen where users can sign-in when clicked | Pass |
 | Logout | Navigates to a page confirming for the user to log out | Pass |
 
-## Feature Testing 
-
+## Feature Testing:
 
 | Feature | Expected Outcome | Grade | Screenshots |
 | ------- | ---------------- | ----- | --------- |
@@ -392,7 +382,7 @@ Add an Entry
 | Footer | A footer displays social information | Pass | ![footer](static/assets/images/footer.JPG)
 | Social links work | The social links will navigate to a new page when they're clicked. They will open in a new tab | Pass | ![footer](static/assets/images/footer.JPG)
 
-## User Story Testing 
+## User Story Testing:
 
 | User Story | Acceptance Criteria | Outcome | Screenshots |
 | ------- | ---------------- | ----- | --------- |
@@ -425,13 +415,13 @@ The technologies implemented in this application included HTML5, CSS, JavaScript
 * JavaScript
 * Python
 
-# Deployment :
+# Deployment:
 
 I followed the same deployment steps used for our Django blog walkthrough project to deploy this application. The instructions were primarily sourced from the follow-along videos and text steps provided on the Code Institute LMS.
 
 I wasn't able to commit my changes as regularly as I would have liked due to health issues, time constraints, encountering problems that required additional adjustments, and occasional forgetfulness.
 
-# Bugs
+# Bugs:
 
 * The slug field is currently not operational because the Comments model has not been created yet. This feature will be implemented in the future, enabling the slug field to link journal entries to comments and allow for editing and deleting comments. For now, this limitation does not impact the user’s ability to create, read, update, and delete journal entries.
 
@@ -439,7 +429,12 @@ I wasn't able to commit my changes as regularly as I would have liked due to hea
 
 * Upon signing in, the success message does not appear on the home page but does show up when the user navigates to the Journal Entries page. Additionally, some unexpected bullet points appear, which I have not yet addressed. These issues will be resolved in a future update.
 
-Most bugs encountered during the creation of this application have been resolved. However, a section allowing users to reset their passwords still needs to be implemented. This feature was not within the scope of this particular project but will be addressed soon, along with the following future enhancements:
+Most bugs encountered during the creation of this application have been resolved. However, a section allowing users to reset their passwords still needs to be implemented. This feature was not within the scope of this particular project but will be addressed soon.
+
+
+# Future Features:
+
+As well as fixing the bugs above, the following future enhancements would also be implemented:
 
 * A comments model will allow users to comment on specific journal entries, creating conversation threads between users.
 
