@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
     for (let button of deleteButtons) {
         button.addEventListener("click", (e) => {
             let journalentry_id = e.target.getAttribute("data-journalentry_id");
-            deleteConfirm.href = `/blog/delete_journalentry/${journalentry_id}/`;  // Correct the URL pattern
+            deleteConfirm.href = `/blog/delete_journalentry/${journalentry_id}/`;
             deleteModal.show();
         });
     }

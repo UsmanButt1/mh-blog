@@ -7,15 +7,17 @@ MOOD_TYPES = ((1, "happy"), (2, "neutral"), (3, "sad"))
 
 # Create your models here.
 
+
 class Resource(models.Model):
     """
     Resource model
     """
     title = models.CharField(max_length=100, null=True)
     resource_type = models.CharField(max_length=200)
-    
+
     def __str__(self):
         return f"{self.title}"
+
 
 class JournalEntry(models.Model):
     """
