@@ -418,9 +418,28 @@ The technologies implemented in this application included HTML5, CSS, JavaScript
 
 # Deployment:
 
-I followed the same deployment steps used for our Django blog walkthrough project to deploy this application. The instructions were primarily sourced from the follow-along videos and text steps provided on the Code Institute LMS.
+## GitHub Repository
 
-I wasn't able to commit my changes as regularly as I would have liked due to health issues, time constraints, encountering problems that required additional adjustments, and occasional forgetfulness.
+The Mentality Blog website was developed using GitPod and deployed to a GitHub repository named "mh-blog". The following Git commands were utilised during the development process:
+
+    1. 'git add .' - Added all changes to the staging area.
+    2. 'git commit -m' - Committed the changes and messages to the local repository.
+    3. 'git push' - Pushed the committed chages to the remote "mh-blog" respository on GitHub.
+
+## Heroku Deployment
+
+The website was successfully deployed using Heroku. The deployment process involved the following steps:
+
+    1. Log in to Heroku and click "New" to create a new app.
+    2. Assign a name to the app, choose your region, and click "Create App".
+    3. Under the "Settings" tab, navigate to "Config Vars" and add the following environment variables:
+        - SECRET_KEY: (Your secret key)
+        - DATABASE_URL: (Your database URL)
+        - CLOUDINARY_URL: (Your cloudinary storage URL)
+    4. Set the deployment method to GitHub and connect the appropriate repository.
+    5. In the "Manual Deploy" section, select the main branch and click "Deploy Branch".
+
+Once development is complete, the app will be deployed to Heroku and this process may take some time.
 
 # Bugs:
 
