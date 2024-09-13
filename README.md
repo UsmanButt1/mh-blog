@@ -436,7 +436,7 @@ The website was successfully deployed using Heroku. The deployment process invol
         - SECRET_KEY: (Your secret key)
         - DATABASE_URL: (Your database URL)
         - CLOUDINARY_URL: (Your cloudinary storage URL)
-    4. Set the deployment method to GitHub and connect the appropriate repository (in my case it is "mh-blog").
+    4. Set the deployment method to GitHub and connect the appropriate repository (i.e. "mh-blog").
     5. In the "Manual Deploy" section, select the main branch and click "Deploy Branch".
 
 Once development is complete, the app will be deployed to Heroku and this process may take some time.
