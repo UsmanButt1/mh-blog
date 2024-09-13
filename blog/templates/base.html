@@ -7,10 +7,11 @@
 <html class="h-100" lang="en">
 
 <!-- Header -->
+
 <head>
     <meta charset="utf-8">
     <title>Mentality Blog</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Fonts CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,13 +45,13 @@
                             href="{% url 'index' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == journalentries_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'journalentries' %}">Journal Entries</a>
+                        <a class="nav-link {% if request.path == journalentries_url %}active{% endif %}"
+                            aria-current="page" href="{% url 'journalentries' %}">Journal Entries</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == addjournalentry_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'addjournalentry' %}">Add an Entry</a>
+                        <a class="nav-link {% if request.path == addjournalentry_url %}active{% endif %}"
+                            aria-current="page" href="{% url 'addjournalentry' %}">Add an Entry</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
@@ -94,4 +95,5 @@
     {% block extras %}
     {% endblock %}
 </body>
+
 </html>

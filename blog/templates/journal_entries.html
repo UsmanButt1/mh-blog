@@ -4,51 +4,55 @@
 {% block title %}Journal Entries{% endblock %}
 
 {% block navbar %}
-    {{ block.super }}
+{{ block.super }}
 {% endblock %}
 
 {% block content %}
 <section>
-{% if messages %}
-    <ul class="messages">
-      {% for message in messages %}
-        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+  {% if messages %}
+  <ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
       {% endfor %}
-    </ul>
+  </ul>
   {% endif %}
-
   <h1>Your Journal Entries</h1>
   <br>
-  <br>
-  {% for entry in journalentry_list %}
-    <article>
-      <h3>Title: {{ entry.title }}</h3>
-      <p>Entry Text: {{ entry.entry_text }}</p>
-      {% if entry.mood == 1 %}
-      <p>Mood: happy</p>
-      {% elif entry.mood == 2 %}
-      <p>Mood: neutral</p>
-      {% elif entry.mood == 3 %}
-      <p>Mood: sad</p>
-      {% endif %}
-      <p>Resource: {{ entry.resource }}</p>
-      <p>Resource Title: {{ entry.resourcetitle }}</p>
-      {% if entry.resourceurl != None %}
-      <a href="{{ entry.resourceurl }}"><p>Resource URL: {{ entry.resourceurl }}</p></a>
-      {% endif %}
-      {% if user.is_authenticated and entry.user == user %}
-        <a href="{% url 'editjournalentry' journalentry_id=entry.id %}" class="btn btn-edit btn-success">Edit</a>
-        <a href="{% url 'deletejournalentry' journalentry_id=entry.id %}" class="btn btn-danger">Delete</a>
+  <div class="container-fluid">
+    <div class="row">
+      {% for entry in journalentry_list %}
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <article id="card1" class="card">
+          <h3>Title: {{ entry.title }}</h3>
+          <p>Entry Text: {{ entry.entry_text }}</p>
+          {% if entry.mood == 1 %}
+          <p>Mood: happy</p>
+          {% elif entry.mood == 2 %}
+          <p>Mood: neutral</p>
+          {% elif entry.mood == 3 %}
+          <p>Mood: sad</p>
+          {% endif %}
+          <p>Resource: {{ entry.resource }}</p>
+          <p>Resource Title: {{ entry.resourcetitle }}</p>
+          {% if entry.resourceurl != None %}
+          <a href="{{ entry.resourceurl }}" target="_blank" rel="noopener" aria-label="Visit URL link (opens in new tab)">
+            <p>Resource URL: {{ entry.resourceurl }}</p>
+          </a>
+          {% endif %}
+          {% if user.is_authenticated and entry.user == user %}
+          <a href="{% url 'editjournalentry' journalentry_id=entry.id %}" class="btn btn-edit btn-success">Edit</a>
+          <a href="{% url 'deletejournalentry' journalentry_id=entry.id %}" class="btn btn-danger">Delete</a>
+          {% endif %}
+        </article>
         <br>
-        <br>
-      {% endif %}
-    </article>
-  {% empty %}
-    <p>You have no journal entries yet.</p>
-  {% endfor %}
-
+      </div>
+      {% empty %}
+      <p>You have no journal entries yet.</p>
+      {% endfor %}
+    </div>
+  </div>
   {% if is_paginated %}
-  <div class="row">
+  <div class="row pagination-container">
     <nav aria-label="Page navigation">
       <ul class="pagination justify-content-center">
         {% if page_obj.has_previous %}
@@ -63,8 +67,8 @@
     </nav>
   </div>
   {% endif %}
-{% endblock %}
+  {% endblock %}
 </section>
 {% block extras %}
-  <script src="{% static '/assets/js/delete.js' %}"></script>
+<script src="{% static '/assets/js/delete.js' %}"></script>
 {% endblock %}

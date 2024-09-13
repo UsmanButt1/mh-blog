@@ -2,164 +2,176 @@
 {% load static %}
 {% block content %}
 
-    <div class="container">
-        <div id="hero" style="height: 400px" class="p-4 p-md-5 mb-4 text-black rounded">
-            <div style="margin-left: 0px" class="col-md-6 px-0">
-                <br>
-                <br>
-                <h2 class="display-4 font-italic">Empower Your Mind: Mental Wellness Together</h2>
-                <p style="color: green" class="lead my-3">Share journal entries and connect with a supportive <br>
-                    community to enhance mental well-being.</p>
-                <p class="lead mb-0"><a href="{% url 'account_signup' %}" class="text-black font-weight-bold">Join Our Community</a></p>
-            </div>
+<div class="container">
+    <div id="hero" style="height: 400px" class="p-4 p-md-5 mb-4 text-black rounded">
+        <div style="margin-left: 0px" class="col-md-6 px-0">
+            <br>
+            <br>
+            <h2 class="display-4 font-italic">Empower Your Mind: Mental Wellness Together</h2>
+            <p style="color: green" class="lead my-3">Share journal entries and connect with a supportive <br>
+                community to enhance mental well-being.</p>
+            <p class="lead mb-0"><a href="{% url 'account_signup' %}" class="text-black font-weight-bold">Join Our
+                    Community</a></p>
         </div>
+    </div>
 
-        <div class="row mb-2">
-            <div class="col-md-6">
-                <div
-                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-primary">Mentality Blog Team</strong>
-                        <h3 class="mb-0">Stronger Together</h3>
-                        <div class="mb-1 text-muted">July 19</div>
-                        <p class="card-text mb-auto">Our blog offers a safe space to journal your thoughts and connect
-                            with like-minded individuals by sharing and exploring each other's experiences.
-                        </p>
-                        <a href="{% url 'journalentries' %}" class="stretched-link">Continue reading</a>
-                    </div>
-                    <div class="col-auto d-none d-lg-block">
-                        <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
-                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img"
-                            focusable="false">
-                            <title>Placeholder</title>
-                            <image href="/static/assets/images/flowerbrain-resized2.jpg" width="200" height="250" preserveAspectRatio="xMidYMid slice"/>
-                        </svg>
+    <div class="row mb-2">
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">Mentality Blog Team</strong>
+                    <h3 class="mb-0">Stronger Together</h3>
+                    <div class="mb-1 text-muted">July 19</div>
+                    <p class="card-text mb-auto">Our blog offers a safe space to journal your thoughts and connect
+                        with like-minded individuals by sharing and exploring each other's experiences.
+                    </p>
+                    <a href="{% url 'journalentries' %}" class="stretched-link">Continue reading</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
+                        aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img"
+                        focusable="false">
+                        <title>Placeholder</title>
+                        <image href="/static/assets/images/flowerbrain-resized2.jpg" width="200" height="250"
+                            preserveAspectRatio="xMidYMid slice" />
+                    </svg>
 
-                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div
-                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-success">Usman</strong>
-                        <h3 class="mb-0">My First Journal Entry</h3>
-                        <div class="mb-1 text-muted">July 15</div>
-                        <p class="mb-auto">I had a mixed bag of emotions today with some positive and some negative thoughts
-                            and feelings but I followed along with a mindfulness video on YouTube and it really helped.</p>
-                        <a href="{% url 'journalentries' %}" class="stretched-link">Continue reading</a>
-                    </div>
-                    <div class="col-auto d-none d-lg-block">
-                        <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
-                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img"
-                            focusable="false">
-                            <title>Placeholder</title>
-                            <image href="/static/assets/images/teddy-resized.jpg" width="200" height="250" preserveAspectRatio="xMidYMid slice"/>
-                        </svg>
+        </div>
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-success">Usman</strong>
+                    <h3 class="mb-0">My First Journal Entry</h3>
+                    <div class="mb-1 text-muted">July 15</div>
+                    <p class="mb-auto">I had a mixed bag of emotions today with some positive and some negative thoughts
+                        and feelings but I followed along with a mindfulness video on YouTube and it really helped.</p>
+                    <a href="{% url 'journalentries' %}" class="stretched-link">Continue reading</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
+                        aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img"
+                        focusable="false">
+                        <title>Placeholder</title>
+                        <image href="/static/assets/images/teddy-resized.jpg" width="200" height="250"
+                            preserveAspectRatio="xMidYMid slice" />
+                    </svg>
 
-                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <h3 class="pb-4 mb-4 font-italic border-bottom">
-                    From the Team at Mentality Blog
-                </h3>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h3 class="pb-4 mb-4 font-italic border-bottom">
+                From the Team at Mentality Blog
+            </h3>
 
-                <div class="blog-post">
-                    <h2 class="blog-post-title">Welcome to Mentality Blog: Your Safe Space for Mental Wellbeing</h2>
-                    <p class="blog-post-meta">July 17, 2024 by Mentality Blog</p>
+            <div class="blog-post">
+                <h2 class="blog-post-title">Welcome to Mentality Blog: Your Safe Space for Mental Wellbeing</h2>
+                <p class="blog-post-meta">July 17, 2024 by Mentality Blog</p>
 
-                    <p>In today's fast-paced world, it's easy to feel overwhelmed and isolated. Many of us grapple with 
-                        stress, anxiety, and the pressures of daily life, often feeling like we're alone in our 
-                        struggles. But what if there was a place where you could share your thoughts and experiences, 
-                        connect with others who understand what you're going through, and find support on your journey 
-                        to better mental health?</p>
-                    <p>Welcome to Mentality Blog, a nurturing community dedicated to enhancing mental 
-                        wellbeing. Here, you'll find a safe space to log your thoughts as journal entries and explore 
-                        the experiences of like-minded individuals. Our blog is more than just a platform; it's a 
-                        community where everyone is in the same boat, striving to improve their mental health together.</p>
-                    <hr>
-                    <h2>Why Join The Mentality Blog?</h2>
-                    <p><strong>1. Share Your Stories:</strong></p>
-                    <p>Writing can be a powerful tool for self-reflection and healing. At the Mentality Blog, you can 
-                        create journal entries to express your thoughts, feelings, and experiences. Whether you're dealing 
-                        with a challenging day or celebrating a small victory, your story matters. Sharing your journey can 
-                        provide relief and insight, not just for you, but for others who might be facing similar challenges.</p>
-                    
-                    <p><strong>2. Connect with a Supportive Community:</strong></p>
-                    <p>One of the most comforting aspects of our platform is knowing you're not alone. By reading others' journal 
-                        entries, you'll discover a diverse range of experiences and perspectives. You'll find that many people 
-                        share the same struggles and triumphs as you do. This sense of connection can be incredibly reassuring 
-                        and can foster a strong sense of belonging.</p>
-                    
-                    <p><strong>3. Learn and Grow Together:</strong></p>
-                    <p>The Mentality Blog is a space for continuous learning and growth. Our community members share not only 
-                        their challenges but also their coping strategies, tips, and resources. By engaging with the community, you'll 
-                        gain new insights and techniques to help manage your mental health more effectively.</p>
+                <p>In today's fast-paced world, it's easy to feel overwhelmed and isolated. Many of us grapple with
+                    stress, anxiety, and the pressures of daily life, often feeling like we're alone in our
+                    struggles. But what if there was a place where you could share your thoughts and experiences,
+                    connect with others who understand what you're going through, and find support on your journey
+                    to better mental health?</p>
+                <p>Welcome to Mentality Blog, a nurturing community dedicated to enhancing mental
+                    wellbeing. Here, you'll find a safe space to log your thoughts as journal entries and explore
+                    the experiences of like-minded individuals. Our blog is more than just a platform; it's a
+                    community where everyone is in the same boat, striving to improve their mental health together.</p>
+                <hr>
+                <h2>Why Join The Mentality Blog?</h2>
+                <p><strong>1. Share Your Stories:</strong></p>
+                <p>Writing can be a powerful tool for self-reflection and healing. At the Mentality Blog, you can
+                    create journal entries to express your thoughts, feelings, and experiences. Whether you're dealing
+                    with a challenging day or celebrating a small victory, your story matters. Sharing your journey can
+                    provide relief and insight, not just for you, but for others who might be facing similar challenges.
+                </p>
 
-                    <h3>How to Get Started</h3>
-                    <p>Joining the Mentality Blog is simple and free. Here's how you can get started:</p>
-                    <p><strong>1. Sign Up:</strong></p>
-                    <p>Create your free account and become a member of our supportive community.</p>
-                    
-                    <p><strong>2. Start Journaling:</strong></p>
-                    <p>Log your thoughts and experiences in your personal journal. Write as often as you like;
-                        there's no pressure, just a safe space to express yourself.</p>
-                    
-                    <p><strong>3. Engage with Others:</strong></p>
-                    <p>Read others' journal entries. Offer/receive support via resources, share your thoughts, and build 
-                        meaningful connections.</p>
-                    
-                    <p><strong>4. Participate in Community Events:</strong></p>
-                    <p>Join our regular events and discussions focused on mental health topics. Learn from experts 
-                        and community members alike.</p>
-                    
-                    <p>At the Mentality Blog, we believe that by sharing our journeys, we can support each other 
-                        and grow stronger together. Your story is important, and your voice matters. Join us today 
-                        and become part of a community that cares.</p>
-                    <p>Together, we can navigate the ups and downs of life, find comfort in shared experiences, and work
-                        towards a brighter, healthier future.</p>
-                    <p>Start your journey with us today and discover the power of a supportive community. Your path to
-                        better mental wellbeing is just a click away!</p>
-                    <p><strong>Join the Mentality Blog - Because Together, We're Stronger.</strong></p>
-                </div>
-                <div class="blog-post">
-                    <h2 class="blog-post-title">Exciting Upcoming Features on Mentality Blog</h2>
-                    <p class="blog-post-meta">July 19, 2024 by Mentality Blog</p>
+                <p><strong>2. Connect with a Supportive Community:</strong></p>
+                <p>One of the most comforting aspects of our platform is knowing you're not alone. By reading others'
+                    journal
+                    entries, you'll discover a diverse range of experiences and perspectives. You'll find that many
+                    people
+                    share the same struggles and triumphs as you do. This sense of connection can be incredibly
+                    reassuring
+                    and can foster a strong sense of belonging.</p>
 
-                    <p>Stay tuned for new features that will further enhance your experience on Mentality Blog:</p>
-                    <ul>
-                        <li><strong>Comment on Journal Entries:</strong> Engage with the community by commenting on others' journal entries.</li>
-                        <li><strong>Mood Tracking:</strong> Track your moods over specific periods and view them on a graph.</li>
-                        <li><strong>Share Mood Insights:</strong> Share mood graphs with others to identify triggers of low moods.</li>
-                        <li><strong>Jump to Key Entries:</strong> Easily navigate to periods of low, neutral, and happy moods to see what was happening
+                <p><strong>3. Learn and Grow Together:</strong></p>
+                <p>The Mentality Blog is a space for continuous learning and growth. Our community members share not
+                    only
+                    their challenges but also their coping strategies, tips, and resources. By engaging with the
+                    community, you'll
+                    gain new insights and techniques to help manage your mental health more effectively.</p>
+
+                <h3>How to Get Started</h3>
+                <p>Joining the Mentality Blog is simple and free. Here's how you can get started:</p>
+                <p><strong>1. Sign Up:</strong></p>
+                <p>Create your free account and become a member of our supportive community.</p>
+
+                <p><strong>2. Start Journaling:</strong></p>
+                <p>Log your thoughts and experiences in your personal journal. Write as often as you like;
+                    there's no pressure, just a safe space to express yourself.</p>
+
+                <p><strong>3. Engage with Others:</strong></p>
+                <p>Read others' journal entries. Offer/receive support via resources, share your thoughts, and build
+                    meaningful connections.</p>
+
+                <p><strong>4. Participate in Community Events:</strong></p>
+                <p>Join our regular events and discussions focused on mental health topics. Learn from experts
+                    and community members alike.</p>
+
+                <p>At the Mentality Blog, we believe that by sharing our journeys, we can support each other
+                    and grow stronger together. Your story is important, and your voice matters. Join us today
+                    and become part of a community that cares.</p>
+                <p>Together, we can navigate the ups and downs of life, find comfort in shared experiences, and work
+                    towards a brighter, healthier future.</p>
+                <p>Start your journey with us today and discover the power of a supportive community. Your path to
+                    better mental wellbeing is just a click away!</p>
+                <p><strong>Join the Mentality Blog - Because Together, We're Stronger.</strong></p>
+            </div>
+            <div class="blog-post">
+                <h2 class="blog-post-title">Exciting Upcoming Features on Mentality Blog</h2>
+                <p class="blog-post-meta">July 19, 2024 by Mentality Blog</p>
+
+                <p>Stay tuned for new features that will further enhance your experience on Mentality Blog:</p>
+                <ul>
+                    <li><strong>Comment on Journal Entries:</strong> Engage with the community by commenting on others'
+                        journal entries.</li>
+                    <li><strong>Mood Tracking:</strong> Track your moods over specific periods and view them on a graph.
+                    </li>
+                    <li><strong>Share Mood Insights:</strong> Share mood graphs with others to identify triggers of low
+                        moods.</li>
+                    <li><strong>Jump to Key Entries:</strong> Easily navigate to periods of low, neutral, and happy
+                        moods to see what was happening
                         in your life at those times.</li>
-                    </ul>
-                    <p>These features are designed to help you better understand your mental health journey and connect more deeply with our supportive 
-                        community. We are excited to bring these tools to you soon!</p>
-                </div>
-
-                <nav class="blog-pagination">
-                    <a class="btn btn-outline-primary" href="#">Top</a>
-                </nav>
-
+                </ul>
+                <p>These features are designed to help you better understand your mental health journey and connect more
+                    deeply with our supportive
+                    community. We are excited to bring these tools to you soon!</p>
             </div>
 
-            <aside class="col-md-4">
-                <div class="p-4 mb-3 bg-light rounded">
-                    <h4 class="font-italic">About</h4>
-                    <p class="mb-0">Welcome to the Mentality Blog, a safe haven for sharing and exploring your
-                        thoughts. Our blog allows you to journal your experiences and connect with like-minded
-                        individuals through shared entries. Together, we foster a supportive community dedicated
-                        to enhancing mental wellbeing. <em>Remember, you are not alone!</em></p>
-                </div>
-                <!-- Future Feature -->
-                <!-- <div class="p-4">
+            <nav class="blog-pagination">
+                <a class="btn btn-outline-primary" href="#">Top</a>
+            </nav>
+
+        </div>
+
+        <aside class="col-md-4">
+            <div class="p-4 mb-3 bg-light rounded">
+                <h4 class="font-italic">About</h4>
+                <p class="mb-0">Welcome to the Mentality Blog, a safe haven for sharing and exploring your
+                    thoughts. Our blog allows you to journal your experiences and connect with like-minded
+                    individuals through shared entries. Together, we foster a supportive community dedicated
+                    to enhancing mental wellbeing. <em>Remember, you are not alone!</em></p>
+            </div>
+            <!-- Future Feature -->
+            <!-- <div class="p-4">
                     <h4 class="font-italic">Archives</h4>
                     <ol class="list-unstyled mb-0">
                         <li><a href="#">April 2024</a></li>
@@ -168,18 +180,21 @@
                     </ol>
                 </div> -->
 
-                <div class="p-4">
-                    <h4 class="font-italic">More Help</h4>
-                    <ol class="list-unstyled">
-                        <li><a href="https://www.mentalhealth.org.uk/explore-mental-health/articles" target="_blank">Mental Health Articles</a></li>
-                        <li><a href="https://www.pexels.com/search/videos/meditation/" target="_blank">Meditation Videos</a></li>
-                        <li><a href="https://www.nhs.uk/nhs-services/mental-health-services/where-to-get-urgent-help-for-mental-health/" target="_blank">Emergency Contacts</a></li>
-                    </ol>
-                </div>
-            </aside>
-
-        </div>
+            <div class="p-4">
+                <h4 class="font-italic">More Help</h4>
+                <ol class="list-unstyled">
+                    <li><a href="https://www.mentalhealth.org.uk/explore-mental-health/articles" target="_blank">Mental
+                            Health Articles</a></li>
+                    <li><a href="https://www.pexels.com/search/videos/meditation/" target="_blank">Meditation Videos</a>
+                    </li>
+                    <li><a href="https://www.nhs.uk/nhs-services/mental-health-services/where-to-get-urgent-help-for-mental-health/"
+                            target="_blank">Emergency Contacts</a></li>
+                </ol>
+            </div>
+        </aside>
 
     </div>
+
+</div>
 
 {% endblock %}
